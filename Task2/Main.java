@@ -1,5 +1,10 @@
 package com.company;
 
+/**
+ * Reads string Name entered by the user in command line
+ * and displays it after "Hello, ";
+ * Example: Name = Kristina, displays "Hello, Kristina"
+ */
 public class Main {
 
     /**
