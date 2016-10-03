@@ -24,7 +24,9 @@ public class Main {
         double multiplResult = multiplOfNumbers(first, second);
         System.out.println("The multiplication of your numbers " + first + " * " + second + " = " + multiplResult);
         double divResult = divOfNumbers(first, second);
-        System.out.println("The division of your numbers " + first + " / " + second + " = " + divResult);
+        if (!(checkDivResult(divResult))) {
+            System.out.println("The division of your numbers " + first + " / " + second + " = " + divResult);
+        }
     }
 
     /**
@@ -69,17 +71,26 @@ public class Main {
     }
 
     /**
-    * Counting the division of the numbers
-    */
-    public static double divOfNumbers(double first, double second) {
-        double division = 0;
-        if (second != 0) {
-            division = first / second;
-        } else {
-            System.out.println("Division by zero!");
+     * Checking the result of division on POSITIVE_INFINITY, NEGATIVE_INFINITY and NaN
+     * if True displays "Invalid result of division!"
+     * Example: division by zero
+     *
+     * @param divResult - contains the result of calling divOfNumbers(): division of first numb by second
+     * @return - true if division is impossible
+     */
+    public static boolean checkDivResult (double divResult){
+        if (divResult == Double.POSITIVE_INFINITY || divResult == Double.NEGATIVE_INFINITY || divResult == Double.NaN) {
+            System.out.println("Invalid result of division!");
             System.exit(1);
         }
-        return (division);
+        return (true);
     }
 
+    /**
+     * Counting the division of the numbers
+     */
+    public static double divOfNumbers(double first, double second) {
+        double division = first / second;
+        return (division);
+    }
 }
