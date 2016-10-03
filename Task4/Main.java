@@ -2,6 +2,11 @@ package com.company;
 
 import java.util.Scanner;
 
+/**
+ * Displays the quadratic equation, reads parameters a, b, c of the equation;
+ * finds and displays the roots, if discriminant = 0, > 0
+ * if discriminant < 0 - prints "There are no roots!"
+ */
 public class Main {
 
     /**
@@ -12,7 +17,7 @@ public class Main {
      */
     public static void main(String[] args) {
 
-        System.out.println("ax^2+bx+c=0");
+        System.out.println("ax^2 + bx + c = 0");
         System.out.println("Please, enter a");
         double a = getUserNumber();
         System.out.println(a);
