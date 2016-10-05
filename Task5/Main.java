@@ -13,21 +13,19 @@ public class Main {
      * @param args - array of string, for the information which is entered from the console
      */
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Enter the sides of the triangle: ");
+
         double[] sides = new double[3];
         for (int i = 0; i < sides.length; i++) {
-            if (in.hasNextDouble()) {
-                sides[i] = in.nextDouble();
-            }
-        } if (isFigureValid(sides)) {
-             if (sides[0] == sides[1] || sides[1] == sides[2] || sides[2] == sides[0]) {
-                 System.out.println("The triangle is isosceles");
-             } else if (sides[0] == sides[1] && sides[1] == sides[2]) {
-                 System.out.println("The triangle is equilateral");
-             } else if (sides[0] != sides[1] && sides[1] != sides[2]) {
+            sides[i] = getUserSide();
+        }
+        if (isFigureValid(sides)) {
+            if (sides[0] == sides[1] || sides[1] == sides[2] || sides[2] == sides[0]) {
+                System.out.println("The triangle is isosceles");
+            } else if (sides[0] == sides[1] && sides[1] == sides[2]) {
+                System.out.println("The triangle is equilateral");
+            } else if (sides[0] != sides[1] && sides[1] != sides[2]) {
                 System.out.println("The triangle is versatile");
-             }
+            }
         }
     }
 
@@ -46,5 +44,19 @@ public class Main {
             }
         }
         return (true);
+    }
+
+    /**
+     * Asks user to enter the length of the side of the triangle;
+     * reads it into side
+     */
+    public static double getUserSide() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Please, enter the side of the triangle: ");
+        double side = 0;
+        if (in.hasNextDouble()) {
+            side = in.nextDouble();
+        }
+        return (side);
     }
 }
