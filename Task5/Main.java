@@ -56,6 +56,9 @@ public class Main {
         double side = 0;
         if (in.hasNextDouble()) {
             side = in.nextDouble();
+        } else {
+            System.out.println("You entered wrong side!!!");
+            System.exit(1);
         }
         return (side);
     }
