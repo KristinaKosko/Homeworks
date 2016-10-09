@@ -17,14 +17,10 @@ public class ChooseTheRule {
         int[] chooser = new int[4];
         String[] stringOfWords = getUserString();
         Rule[] arrayOfRules = new Rule[4];
-        Rule rule1 = new Rule1();
-        Rule rule2 = new Rule2();
-        Rule rule3 = new Rule3();
-        Rule rule4 = new Rule4();
-        arrayOfRules[0] = rule1;
-        arrayOfRules[1] = rule2;
-        arrayOfRules[2] = rule3;
-        arrayOfRules[3] = rule4;
+        arrayOfRules[0] = new Rule1();
+        arrayOfRules[1] = new Rule2();
+        arrayOfRules[2] = new Rule3();
+        arrayOfRules[3] = new Rule4();
         for (int i = 0; i < arrayOfRules.length; i++) {
             if (arrayOfRules[i].checkingRule(stringOfWords)) {
                 chooser[i] = 1;
