@@ -3,7 +3,7 @@ package com.company;
 /**
  * Checks corresponding to the second rule: includes only numbers
  */
-public class Rule2 {
+public class Rule2 extends Rule {
 
     /**
      * Checks if the entered string contains only numbers
@@ -12,7 +12,7 @@ public class Rule2 {
      * @return true - if the string includes only numbers
      * false - if includes words
      */
-    public boolean checkingRule2(String[] stringOfWords) {
+    public boolean checkingRule(String[] stringOfWords) {
         String[] arrayOfWords = stringOfWords;
         if (arrayOfWords.length == 1 && (arrayOfWords[0].matches("^[0-9]*$"))) {
             return true;

@@ -3,7 +3,7 @@ package com.company;
 /**
  * Checks corresponding to the third rule: includes more than 5 words
  */
-public class Rule3 {
+public class Rule3 extends Rule {
 
     /**
      * Checks if the entered string contains more than 5 words
@@ -12,7 +12,7 @@ public class Rule3 {
      * @return true - if the string contains more than 5 words
      *         false - if doesn't
      */
-    public boolean checkingRule3(String[] stringOfWords) {
+    public boolean checkingRule(String[] stringOfWords) {
         String[] arrayOfWords = stringOfWords;
         int counter = 0;
         for (int i = 0; i < arrayOfWords.length; i++) {

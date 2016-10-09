@@ -3,7 +3,7 @@ package com.company;
 /**
  * Checks corresponding to the first rule: does not contain numbers
  */
-public class Rule1 {
+public class Rule1 extends Rule {
 
     /**
      * Checks if the entered string contains any numbers
@@ -12,7 +12,7 @@ public class Rule1 {
      * @return true - if the string doesn't contain numbers at all;
      *         false - if contains numbers
      */
-    public boolean checkingRule1(String[] stringOfWords) {
+    public boolean checkingRule(String[] stringOfWords) {
            for (int i = 0; i < stringOfWords.length; i++) {
                for (int j = 0; j < stringOfWords[i].length(); j++) {
                    if (Character.isDigit(stringOfWords[i].charAt(j))) {
