@@ -4,7 +4,7 @@ package com.company;
  * Checks corresponding to the third rule: contains a word from a dictionary
  */
 public class Rule4 extends Rule {
-    static String[] vocabulary = new String[]{"Opozdal", "potomu", "chto", "utrom", "perelazil", "cherez", "babu", "i", "zatsepilsya", "herom"};
+    static String[] vocabulary = new String[]{"Thanks", "God", "it", "is", "friday"};
     /**
      * Checks if the entered string contains a word from the dictionary
      *
@@ -22,6 +22,13 @@ public class Rule4 extends Rule {
             }
         }
         return false;
+    }
+
+    /**
+     * Prints that string corresponds to the 4 rule
+     */
+    public void print() {
+        System.out.println("The string matches with the fourth rule ");
     }
 }
 

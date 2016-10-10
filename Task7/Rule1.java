@@ -22,4 +22,11 @@ public class Rule1 extends Rule {
            }
         return true;
     }
+
+    /**
+     * Prints that string corresponds to the 1 rule
+     */
+    public void print() {
+        System.out.println("The string matches with the first rule ");
+    }
 }

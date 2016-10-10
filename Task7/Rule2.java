@@ -20,5 +20,12 @@ public class Rule2 extends Rule {
             return false;
         }
     }
+
+    /**
+     * Prints that string corresponds to the 2 rule
+     */
+    public void print() {
+        System.out.println("The string matches with the second rule ");
+    }
 }
 

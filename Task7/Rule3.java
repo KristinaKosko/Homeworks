@@ -24,4 +24,11 @@ public class Rule3 extends Rule {
             return false;
         }
     }
+
+    /**
+     * Prints that string corresponds to the 3 rule
+     */
+    public void print() {
+        System.out.println("The string matches with the third rule ");
+    }
 }
