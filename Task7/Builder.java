@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Builder {
 
     /**
-     * Creates a list of rules
+     * Creates rules and add them into ArrayList
      *
      * @return arrayOfRules - array of created rules Rule1, Rule2, Rule3, Rule4
      */
