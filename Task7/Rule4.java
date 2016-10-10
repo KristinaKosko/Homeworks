@@ -5,6 +5,7 @@ package com.company;
  */
 public class Rule4 extends Rule {
     static String[] vocabulary = new String[]{"Thanks", "God", "it", "is", "friday"};
+
     /**
      * Checks if the entered string contains a word from the dictionary
      *
