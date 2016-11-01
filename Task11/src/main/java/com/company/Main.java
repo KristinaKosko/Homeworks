@@ -18,7 +18,7 @@ public class Main {
         Vehicle bus = new Bus();
         OnFoot foot = new OnFoot();
         Bicycle bicycle = new Bicycle();
-        if (car.moveToNextPoint(route.points)) {
+        if (car.ifPointsEqual(route.points)) {
             double[] arrayOfCosts = car.countCost(route.points);
             double hours = Math.round(arrayOfCosts[0]*1000.0)/1000.0;
             double time = Math.round(arrayOfCosts[1]*1000.0)/1000.0;
@@ -26,7 +26,7 @@ public class Main {
         } else {
             System.out.println("Wrong route!");
         }
-        if (bus.moveToNextPoint(route.points)) {
+        if (bus.ifPointsEqual(route.points)) {
             double[] arrayOfCosts = bus.countCost(route.points);
             double hours = Math.round(arrayOfCosts[0]*1000.0)/1000.0;
             double money = Math.round(arrayOfCosts[1]*1000.0)/1000.0;
@@ -34,7 +34,7 @@ public class Main {
         } else {
             System.out.println("Wrong route!");
         }
-        if (foot.moveToNextPoint(route.points)) {
+        if (foot.ifPointsEqual(route.points)) {
             double[] arrayOfCosts = foot.countCost(route.points);
             double hours = Math.round(arrayOfCosts[0]*1000.0)/1000.0;
             double money = Math.round(arrayOfCosts[1]*1000.0)/1000.0;
@@ -42,7 +42,7 @@ public class Main {
         } else {
             System.out.println("Wrong route!");
         }
-        if (bicycle.moveToNextPoint(route.points)) {
+        if (bicycle.ifPointsEqual(route.points)) {
             double[] arrayOfCosts = bicycle.countCost(route.points);
             double hours = Math.round(arrayOfCosts[0]*1000.0)/1000.0;
             double money = Math.round(arrayOfCosts[1]*1000.0)/1000.0;

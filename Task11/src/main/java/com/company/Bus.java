@@ -19,15 +19,8 @@ public class Bus extends Vehicle {
      *                    false - if not
      */
     @Override
-    public boolean moveToNextPoint(ArrayList<Point> points) {
-
-        if (!((points.get(0).x == points.get((points.size()) - 1).x) && (points.get(0).y == points.get((points.size()) - 1).y))) {
-            return true;
-        } else {
-            System.out.println(points.get(0).x );
-            System.out.println(points.get((points.size()) - 1).x);
-            return false;
-        }
+    public boolean ifPointsEqual(ArrayList<Point> points) {
+        return (!(points.get(0).equals(points.get(points.size() - 1))));
     }
 
     /**

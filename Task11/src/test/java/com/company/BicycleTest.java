@@ -1,42 +1,61 @@
 package com.company;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 
-import static org.junit.Assert.*;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
 
 public class BicycleTest {
     private Bicycle bicycle;
     ArrayList<Point> list;
 
-    @Before
+    @BeforeTest
     public void setUp() throws Exception {
         bicycle = new Bicycle();
         list = new ArrayList<Point>();
         list.add(new Point(0, 0));
     }
-     @After
+
+    @DataProvider (name = "movePoints")
+    public Object[][] moveByCoordinates() {
+        return new Object[][] {
+                {1.4142135623730951, 1, 1},
+                {3.414213562373095, 1, -1},
+                {5.414213562373095, -1, -1},
+                {6.82842712474619, 0, 0}
+        };
+    }
+
+    @Test(dataProvider = "movePoints")
+    public  void testCountDistance(double result, double x, double y) throws Exception {
+        list.add(new Point(x, y));
+        Assert.assertEquals(bicycle.calculateDistance(list), result, 0.1);
+    }
+     @AfterTest
     public void tearDown() throws Exception {
         list.clear();
     }
 
     @Test
-    public void testMoveToNextPoint() throws Exception {
-        assertFalse(bicycle.moveToNextPoint(list));
+    public void testIfPointsEqual() throws Exception {
+        assertFalse(bicycle.ifPointsEqual(list));
     }
 
     @Test
     public void testCountCost() throws Exception {
-        assertArrayEquals(new double[] {0,0}, bicycle.countCost(list), 0.001);
+        assertEquals(new double[]{0, 0}, bicycle.countCost(list));
     }
 
     @Test
     public void testCalculateDistance() throws Exception {
         list.add(new Point(1, 1));
-        assertEquals(1.414, bicycle.calculateDistance(list), 0.001);
+        assertEquals(1.4142135623730951, bicycle.calculateDistance(list));
     }
 
 }
