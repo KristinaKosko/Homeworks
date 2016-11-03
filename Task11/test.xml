@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Transport Suite">
+    <test name="BicycleTest">
+        <classes>
+            <class name="com.company.BicycleTest">
+            </class>
+        </classes>
+    </test>
+    <test name="BusTest">
+        <classes>
+            <class name="com.company.BusTest">
+            </class>
+        </classes>
+    </test>
+    <test name="CarTest">
+        <classes>
+            <class name="com.company.CarTest">
+            </class>
+        </classes>
+    </test>
+    <test name="OnFootTest">
+        <classes>
+            <class name="com.company.OnFootTest">
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="TestOfFreeTypesOfTravelling">
+        <classes>
+            <class name="com.company.BicycleTest"/>
+            <class name="com.company.OnFootTest"/>
+        </classes>
+    </test>
+    <test name="TestOfQuickTypesOfTravelling">
+    <classes>
+        <class name="com.company.CarTest"/>
+        <class name="com.company.BusTest"/>
+    </classes>
+    </test>
+    <test name="TestOfCalculatingDistance">
+        <classes>
+            <class name="com.company.CarTest"/>
+            <class name="com.company.BicycleTest"/>
+            <class name="com.company.OnFootTest"/>
+            <class name="com.company.BusTest">
+        <methods>
+            <exclude name="testCountCost"/>
+            <exclude name="testIfPointsEqual"/>
+        </methods>
+    </class>
+    </classes>
+</test>
+    <test name="TestOfStartPointAndLastPointOnEquality">
+        <groups>
+            <run>
+                <include name="ifPointsEqual"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.company.BicycleTest"/>
+        </classes>
+    </test>
+</suite>

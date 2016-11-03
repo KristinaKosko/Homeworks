@@ -12,7 +12,7 @@ public interface MovingTo {
      *
      * @return
      */
-    public boolean moveToNextPoint(ArrayList<Point> points);
+    public boolean ifPointsEqual(ArrayList<Point> points);
 
     /**
      * Calculates the distance of the route

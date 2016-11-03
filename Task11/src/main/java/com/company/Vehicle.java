@@ -11,7 +11,7 @@ public abstract class Vehicle implements MovingTo {
      * Checks if we can move object to the next point
      */
     @Override
-    public abstract boolean moveToNextPoint(ArrayList<Point> points);
+    public abstract boolean ifPointsEqual(ArrayList<Point> points);
 
     /**
      * Calculates the distance of the route

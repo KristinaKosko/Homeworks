@@ -41,9 +41,7 @@ public class Route {
 
                 for (String string : lines) {
                     String[] coordinates = string.split(" ");
-                    double x = Double.parseDouble(coordinates[0]);
-                    double y = Double.parseDouble(coordinates[1]);
-                    points.add(new Point(x, y));
+                    addsPoint(coordinates);
                 }
             } catch (IOException e) {
                 System.out.println("Error while reading file!");
@@ -82,5 +80,16 @@ public class Route {
             }
         }
         return true;
+    }
+
+    /**
+     * Adds coordinates of each point of the route into the list of points
+     *
+     * @param coordinates - double, coordinates x and y for each point of the route
+     */
+    public void addsPoint(String[] coordinates) {
+        double x = Double.parseDouble(coordinates[0]);
+        double y = Double.parseDouble(coordinates[1]);
+        points.add(new Point(x, y));
     }
 }

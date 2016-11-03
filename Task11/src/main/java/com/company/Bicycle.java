@@ -16,8 +16,8 @@ public class Bicycle implements MovingTo {
      *                    false - if not
      */
     @Override
-    public boolean moveToNextPoint(ArrayList<Point> points) {
-        return (!(points.get(0) == points.get(points.size() - 1)));
+    public boolean ifPointsEqual(ArrayList<Point> points) {
+        return (!(points.get(0).equals(points.get(points.size() - 1))));
     }
 
     /**
