@@ -1,5 +1,7 @@
 package com.company;
 
+import java.math.BigDecimal;
+
 /**
  * The application reads the lengths of the sides of triangle
  * Gives the information about the type of triangle: 1 - isosceles, 2 - equilateral or 3 - versatile
@@ -15,9 +17,8 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            double[] sides = new double[3];
+            BigDecimal[] sides = new BigDecimal[3];
             GetUserSides getSides = new GetUserSides();
-            int type;
             try {
                 for (int i = 0; i < sides.length; i++) {
                     sides[i] = getSides.getUserSide();
@@ -27,15 +28,7 @@ public class Main {
                 System.exit(1);
             }
             Triangle triangle = new Triangle(sides[0], sides[1], sides[2]);
-            triangle.definesType();
-            type = triangle.getType();
-            if (type == 1) {
-                System.out.println("This triangle is isosceles");
-            } else if (type == 2) {
-                System.out.println("This triangle is equilateral");
-            } else if (type == 3) {
-                System.out.println("This triangle is versatile");
-            }
+            System.out.println(triangle.definesType());
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }

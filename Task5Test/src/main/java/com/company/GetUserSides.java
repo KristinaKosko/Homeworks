@@ -1,5 +1,6 @@
 package com.company;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 /**
@@ -11,9 +12,9 @@ public class GetUserSides {
      * Asks user to enter the length of the side of the triangle;
      * reads it into side
      */
-    public double getUserSide() throws NumberFormatException {
+    public BigDecimal getUserSide() throws NumberFormatException {
         Scanner in = new Scanner(System.in);
         System.out.println("Please, enter the side of the triangle: ");
-        return (in.nextDouble());
+        return (in.nextBigDecimal());
     }
 }
