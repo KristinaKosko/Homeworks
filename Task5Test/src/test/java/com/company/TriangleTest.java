@@ -16,14 +16,6 @@ public class TriangleTest {
                 {BigDecimal.valueOf(10), BigDecimal.valueOf(10), BigDecimal.valueOf(11)},
                 {BigDecimal.valueOf(10), BigDecimal.valueOf(11), BigDecimal.valueOf(10)},
                 {BigDecimal.valueOf(11), BigDecimal.valueOf(10), BigDecimal.valueOf(10)},
-
-                {BigDecimal.valueOf(Double.MAX_VALUE), BigDecimal.valueOf(Double.MAX_VALUE), BigDecimal.valueOf(11)},
-                {BigDecimal.valueOf(11), BigDecimal.valueOf(Double.MAX_VALUE), BigDecimal.valueOf(Double.MAX_VALUE)},
-                {BigDecimal.valueOf(Double.MAX_VALUE), BigDecimal.valueOf(11), BigDecimal.valueOf(Double.MAX_VALUE)},
-
-                {BigDecimal.valueOf(Double.MIN_VALUE), BigDecimal.valueOf(11), BigDecimal.valueOf(11)},
-                {BigDecimal.valueOf(11), BigDecimal.valueOf(Double.MIN_VALUE), BigDecimal.valueOf(11)},
-                {BigDecimal.valueOf(11), BigDecimal.valueOf(11), BigDecimal.valueOf(Double.MIN_VALUE)},
         };
     }
 
@@ -59,11 +51,7 @@ public class TriangleTest {
     @DataProvider(name = "ValidEquilateralTriangle")
     public Object[][] setValidSidesOfTheEquilateralTriangle() {
         return new Object[][]{
-                {BigDecimal.valueOf(1), BigDecimal.valueOf(1), BigDecimal.valueOf(1)},
-                {BigDecimal.valueOf(Double.MAX_VALUE), BigDecimal.valueOf(Double.MAX_VALUE),
-                        BigDecimal.valueOf(Double.MAX_VALUE)},
-                {BigDecimal.valueOf(Double.MIN_VALUE), BigDecimal.valueOf(Double.MIN_VALUE),
-                        BigDecimal.valueOf(Double.MIN_VALUE)}
+                {BigDecimal.valueOf(1), BigDecimal.valueOf(1), BigDecimal.valueOf(1)}
         };
     }
 
@@ -78,12 +66,6 @@ public class TriangleTest {
     public Object[][] setValidSidesOfTheVersatileTriangle() {
         return new Object[][]{
                 {BigDecimal.valueOf(3), BigDecimal.valueOf(4), BigDecimal.valueOf(5)},
-                {BigDecimal.valueOf(Double.MAX_VALUE), BigDecimal.valueOf(100),
-                        BigDecimal.valueOf(Double.MAX_VALUE).subtract(BigDecimal.valueOf(10)),},
-                {BigDecimal.valueOf(Double.MAX_VALUE).subtract(BigDecimal.valueOf(10)), BigDecimal.valueOf(Double.MAX_VALUE),
-                        BigDecimal.valueOf(100)},
-                {BigDecimal.valueOf(100), BigDecimal.valueOf(Double.MAX_VALUE).subtract(BigDecimal.valueOf(10)),
-                        BigDecimal.valueOf(Double.MAX_VALUE)}
         };
     }
 
