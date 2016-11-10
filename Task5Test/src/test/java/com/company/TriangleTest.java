@@ -5,8 +5,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -19,6 +19,7 @@ public class TriangleTest {
     private static final String INVALID_TRIANGLES = "invalidTriangles";
     private static final String ISOSCELES_NODE = "isosceles";
     private static final String EQUILATERAL_NODE = "equilateral";
+    private static final String PATH = "C:\\Users\\Kristina\\IdeaProjects\\Task5Test\\triangleData.xml";
     private static final String SIDE_A = "a";
     private static final String SIDE_B = "b";
     private static final String SIDE_C = "c";
@@ -28,11 +29,8 @@ public class TriangleTest {
 
     @DataProvider(name = "valid triangles from xml")
     public Object[][] readXMLforPositiveIsosceles() throws Exception {
-        File inputFile = new File("C:\\Users\\Kristina\\IdeaProjects\\Task5Test\\triangleData.xml");
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder builder = factory.newDocumentBuilder();
-
-        Document document = builder.parse(inputFile);
+        ParseFile parseFile = new ParseFile();
+        Document document = parseFile.parseInputFile();
         Node validTriangleElement = document.getElementsByTagName(VALID_TRIANGLES).item(0);
         NodeList nodes = validTriangleElement.getChildNodes();
         for (int i = 0; i < nodes.getLength(); i++) {
@@ -53,12 +51,7 @@ public class TriangleTest {
             } else {
                 triangleType = Triangle.TYPE_VERSATILE;
             }
-            result[i] = new Object[]{
-                    new BigDecimal(attributes.getNamedItem(SIDE_A).getNodeValue()),
-                    new BigDecimal(attributes.getNamedItem(SIDE_B).getNodeValue()),
-                    new BigDecimal(attributes.getNamedItem(SIDE_C).getNodeValue()),
-                    triangleType
-            };
+            result[i] = resultArray(attributes, triangleType);
         }
         return result;
     }
@@ -71,20 +64,13 @@ public class TriangleTest {
 
     @DataProvider(name = "invalid triangles from xml")
     public Object[][] readXML() throws Exception {
-        File inputFile = new File("/triangleData.xml");
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder builder = factory.newDocumentBuilder();
-
-        Document document = builder.parse(inputFile);
+        ParseFile parseFile = new ParseFile();
+        Document document = parseFile.parseInputFile();
         NodeList nodes = document.getElementsByTagName(INVALID_TRIANGLES);
         Object[][] result = new BigDecimal[nodes.getLength()][];
         for (int i = 0; i < nodes.getLength(); i++) {
             NamedNodeMap attributes = nodes.item(i).getAttributes();
-            result[i] = new BigDecimal[]{
-                  attributes.getNamedItem(SIDE_A) == null ? null : new BigDecimal(attributes.getNamedItem(SIDE_A).getNodeValue()),
-                  attributes.getNamedItem(SIDE_B) == null ? null :  new BigDecimal(attributes.getNamedItem(SIDE_B).getNodeValue()),
-                  attributes.getNamedItem(SIDE_C) == null ? null : new BigDecimal(attributes.getNamedItem(SIDE_C).getNodeValue()),
-            };
+            result[i] = resultArray(attributes);
         }
         return result;
     }
@@ -92,5 +78,32 @@ public class TriangleTest {
     @Test(dataProvider = "invalid triangles from xml", expectedExceptions = Exception.class)
     public void testNegativeSetNotValidSidesOfTheTriangle(BigDecimal a, BigDecimal b, BigDecimal c) throws Exception {
         triangle = new Triangle(a, b, c);
+    }
+
+    private static Object[] resultArray(NamedNodeMap attributes) {
+        return new BigDecimal[]{
+                attributes.getNamedItem(SIDE_A) == null ? null : new BigDecimal(attributes.getNamedItem(SIDE_A).getNodeValue()),
+                attributes.getNamedItem(SIDE_B) == null ? null : new BigDecimal(attributes.getNamedItem(SIDE_B).getNodeValue()),
+                attributes.getNamedItem(SIDE_C) == null ? null : new BigDecimal(attributes.getNamedItem(SIDE_C).getNodeValue())
+        };
+    }
+
+    private static Object[] resultArray(NamedNodeMap attributes, int triangleType) {
+        return new Object[]{
+                attributes.getNamedItem(SIDE_A) == null ? null : new BigDecimal(attributes.getNamedItem(SIDE_A).getNodeValue()),
+                attributes.getNamedItem(SIDE_B) == null ? null : new BigDecimal(attributes.getNamedItem(SIDE_B).getNodeValue()),
+                attributes.getNamedItem(SIDE_C) == null ? null : new BigDecimal(attributes.getNamedItem(SIDE_C).getNodeValue()),
+                triangleType
+        };
+    }
+
+    public class ParseFile {
+        Document parseInputFile() throws Exception {
+            File inputFile = new File(PATH);
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            Document document = builder.parse(inputFile);
+            return document;
+        }
     }
 }
