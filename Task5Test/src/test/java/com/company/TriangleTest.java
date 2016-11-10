@@ -28,7 +28,7 @@ public class TriangleTest {
 
     @DataProvider(name = "valid triangles from xml")
     public Object[][] readXMLforPositiveIsosceles() throws Exception {
-        File inputFile = new File("/triangleData.xml");
+        File inputFile = new File("C:\\Users\\Kristina\\IdeaProjects\\Task5Test\\triangleData.xml");
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
 
@@ -47,11 +47,11 @@ public class TriangleTest {
             String nodeName = nodes.item(i).getNodeName();
             int triangleType;
             if (nodeName == ISOSCELES_NODE) {
-                triangleType = Triangle.TYPE_IS;
+                triangleType = Triangle.TYPE_ISOSCELES;
             } else if (nodeName == EQUILATERAL_NODE) {
-                triangleType = Triangle.TYPE_EQ;
+                triangleType = Triangle.TYPE_EQUILATERAL;
             } else {
-                triangleType = Triangle.TYPE_VE;
+                triangleType = Triangle.TYPE_VERSATILE;
             }
             result[i] = new Object[]{
                     new BigDecimal(attributes.getNamedItem(SIDE_A).getNodeValue()),

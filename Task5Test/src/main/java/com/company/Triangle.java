@@ -19,9 +19,9 @@ public class Triangle {
     public static final String EQUILATERAL = "Triangle is Equilateral";
     public static final String VERSATILE = "Triangle is Versatile";
 
-    public static final int TYPE_IS = 1;
-    public static final int TYPE_EQ = 2;
-    public static final int TYPE_VE = 3;
+    public static final int TYPE_ISOSCELES = 1;
+    public static final int TYPE_EQUILATERAL = 2;
+    public static final int TYPE_VERSATILE = 3;
 
     /**
      * Verifying the existence of a triangle (each side mustn't be equal 0 or be < 0
@@ -53,11 +53,11 @@ public class Triangle {
      */
     private int definesType(BigDecimal a, BigDecimal b, BigDecimal c) {
         if (a.compareTo(b) == 0 && b.compareTo(c) == 0 && c.compareTo(a) == 0) {
-            return TYPE_EQ;
+            return TYPE_EQUILATERAL;
         } else if (a.compareTo(b) == 0 || b.compareTo(c) == 0 || c.compareTo(a) == 0) {
-            return TYPE_IS;
+            return TYPE_ISOSCELES;
         } else {
-            return TYPE_VE;
+            return TYPE_VERSATILE;
         }
     }
 
@@ -75,10 +75,10 @@ public class Triangle {
      */
     public String getTypeName() {
         switch (type) {
-            case TYPE_IS: {
+            case TYPE_ISOSCELES: {
                 return ISOSCELES;
             }
-            case TYPE_EQ: {
+            case TYPE_EQUILATERAL: {
                 return EQUILATERAL;
             }
         }
