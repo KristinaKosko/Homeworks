@@ -28,7 +28,7 @@ public class Main {
                 System.exit(1);
             }
             Triangle triangle = new Triangle(sides[0], sides[1], sides[2]);
-            System.out.println(triangle.definesType());
+            System.out.println(triangle.getTypeName());
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
