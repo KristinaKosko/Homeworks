@@ -2,6 +2,8 @@ package com.company;
 
 import org.jsoup.nodes.Document;
 
+import java.util.Arrays;
+
 /**
  * A command which checks if the page contains the required text
  */
@@ -19,10 +21,10 @@ public class CommandCheckPageContains implements ICommand {
         double executionTime = System.nanoTime();
         Document doc = CommandOpen.getDocument();
         if (doc.text().contains(targetText[0])) {
-            Logger.Instance.Log(true, "["+Command.command + " " + Command.arguments+"]", System.nanoTime()-executionTime);
+            Logger.Instance.Log(true, "["+Command.command + " " + Arrays.toString(Command.arguments)+"]", System.nanoTime()-executionTime);
             return true;
         }
-        Logger.Instance.Log(false, "["+Command.command + " " + Command.arguments+"]", System.nanoTime()-executionTime);
+        Logger.Instance.Log(false, "["+Command.command + " " + Arrays.toString(Command.arguments)+"]", System.nanoTime()-executionTime);
         return false;
     }
 

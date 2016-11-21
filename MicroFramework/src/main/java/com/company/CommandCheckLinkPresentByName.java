@@ -4,6 +4,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.util.Arrays;
+
 /**
  * A command which checks if the link presented on the page corresponds to the desired name
  */
@@ -24,11 +26,11 @@ public class CommandCheckLinkPresentByName implements ICommand {
 
         for (Element link : hrefs) {
             if (link.text().equals(targetName)) {
-                Logger.Instance.Log(true, "["+Command.command + " " + Command.arguments+"]", System.nanoTime()-executionTime);
+                Logger.Instance.Log(true, "["+Command.command + " " + Arrays.toString(Command.arguments)+"]", System.nanoTime()-executionTime);
                 return true;
             }
         }
-        Logger.Instance.Log(false, "["+Command.command + " " + Command.arguments+"]", System.nanoTime()-executionTime);
+        Logger.Instance.Log(false, "["+Command.command + " " + Arrays.toString(Command.arguments)+"]", System.nanoTime()-executionTime);
         return false;
     }
 

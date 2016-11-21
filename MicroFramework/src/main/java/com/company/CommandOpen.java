@@ -7,6 +7,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.Arrays;
 
 
 /**
@@ -50,12 +51,12 @@ public class CommandOpen implements ICommand{
 
         try {
             doc = Jsoup.parse(text.toString());
-            Logger.Instance.Log(true, Command.command.toString() + " " + Command.arguments.toString(), System.nanoTime()-executionTime);
+            Logger.Instance.Log(true, Command.command.toString() + " " + Arrays.toString(Command.arguments), System.nanoTime()-executionTime);
             return true;
         } catch (Exception e) {
             e.printStackTrace();
             doc = null;
-            Logger.Instance.Log(false, Command.command.toString() + " " + Command.arguments.toString(), System.nanoTime()-executionTime);
+            Logger.Instance.Log(false, Command.command.toString() + " " + Arrays.toString(Command.arguments), System.nanoTime()-executionTime);
             return false;
         }
     }

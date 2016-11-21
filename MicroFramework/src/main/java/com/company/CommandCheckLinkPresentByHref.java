@@ -4,6 +4,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.util.Arrays;
+
 /**
  * A command which checks if this page contains a link which user needs
  */
@@ -24,11 +26,11 @@ public class CommandCheckLinkPresentByHref implements ICommand {
 
         for (Element link : hrefs) {
             if (link.attr("href").equals(targetLink[0])) {
-                Logger.Instance.Log(true, "["+getCommandName()+"]", System.nanoTime()-executionTime);
+                Logger.Instance.Log(true, "["+Command.command + " " + Arrays.toString(Command.arguments)+"]", System.nanoTime()-executionTime);
                 return true;
             }
         }
-        Logger.Instance.Log(false, "["+getCommandName()+"]", System.nanoTime()-executionTime);
+        Logger.Instance.Log(false, "["+Command.command + " " + Arrays.toString(Command.arguments)+"]", System.nanoTime()-executionTime);
         return false;
     }
 
