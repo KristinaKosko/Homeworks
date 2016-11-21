@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+        <data>
+    <validTriangles>
+        <isosceles a="10.0" b="10.0" c="11.0"/>
+        <isosceles a="10.0" b="11.0" c="10.0"/>
+        <isosceles a="11.0" b="10.0" c="10.0"/>
+
+        <equilateral a="1" b="1" c="1"/>
+
+        <versatile a="3" b="4" c="5"/>
+    </validTriangles>
+
+    <invalidTriangles>
+        <negative a="0.0" b="1.0" c="1.0" />
+        <negative a="1.0" b="0.0" c="1.0" />
+        <negative a="1.0" b="1.0" c="0.0"/>
+
+        <negative a="-1.0" b="1.0" c="1.0"/>
+        <negative a="1.0" b="-1.0" c="1.0"/>
+        <negative a="1.0" b="1.0" c="-1.0"/>
+
+        <negative b="1.0" c="1.0"/>
+        <negative a="1.0" c="1.0"/>
+        <negative a="1.0" b="1.0"/>
+    </invalidTriangles>
+        </data>

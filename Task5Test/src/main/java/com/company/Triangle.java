@@ -12,12 +12,16 @@ public class Triangle {
     private BigDecimal a;
     private BigDecimal b;
     private BigDecimal c;
+    private int type;
 
     //Types of the triangle
     public static final String ISOSCELES = "Triangle is Isosceles";
     public static final String EQUILATERAL = "Triangle is Equilateral";
     public static final String VERSATILE = "Triangle is Versatile";
 
+    public static final int TYPE_ISOSCELES = 1;
+    public static final int TYPE_EQUILATERAL = 2;
+    public static final int TYPE_VERSATILE = 3;
 
     /**
      * Verifying the existence of a triangle (each side mustn't be equal 0 or be < 0
@@ -40,19 +44,44 @@ public class Triangle {
         this.a = a;
         this.b = b;
         this.c = c;
+        type = definesType(a, b, c);
     }
 
     /**
      * According to the lengths of the sides entered by the user, defines the type of triangle
      * (if a = b - isosceles, if a = b = c - equilateral, else - versatile)
      */
-    public String definesType() {
+    private int definesType(BigDecimal a, BigDecimal b, BigDecimal c) {
         if (a.compareTo(b) == 0 && b.compareTo(c) == 0 && c.compareTo(a) == 0) {
-            return EQUILATERAL;
+            return TYPE_EQUILATERAL;
         } else if (a.compareTo(b) == 0 || b.compareTo(c) == 0 || c.compareTo(a) == 0) {
-            return ISOSCELES;
+            return TYPE_ISOSCELES;
         } else {
-            return VERSATILE;
+            return TYPE_VERSATILE;
         }
+    }
+
+    /**
+     * @return type - int, triangle's type
+     */
+    public int getType() {
+        return type;
+    }
+
+    /**
+     * Defines the name of the triangles Type
+     *
+     * @return String - type of the triangle
+     */
+    public String getTypeName() {
+        switch (type) {
+            case TYPE_ISOSCELES: {
+                return ISOSCELES;
+            }
+            case TYPE_EQUILATERAL: {
+                return EQUILATERAL;
+            }
+        }
+        return VERSATILE;
     }
 }
