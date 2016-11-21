@@ -1,0 +1,5 @@
++ [open [Ljava.lang.String;@5fdef03a] 0.419
+Total tests: 1
+Passed/Failed: 1/0
+Total time: 0.419
+Average time: 0.419
