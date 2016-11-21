@@ -1,1 +1,1 @@
-open http://google.com 5
+open "http://google.com" "5"
