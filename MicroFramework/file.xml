@@ -1,0 +1,3 @@
+<commands>
+	<command param0 = "open" param1 = "http://google.com" param2 = "7" />
+</commands>
