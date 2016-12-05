@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1480536167740" stop="1480536211886" version="1.4.23.HOTFIX1" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Command line suite : Command line test</name>
+    <title>Command line suite : Command line test</title>
+    <test-cases>
+        <test-case start="1480536172409" stop="1480536173579" status="passed">
+            <name>negativeAuthorization</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536172409" stop="1480536173579" status="passed">
+            <name>negativeAuthorization</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536173803" stop="1480536175348" status="passed">
+            <name>positiveAuthorization</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536173803" stop="1480536175348" status="passed">
+            <name>positiveAuthorization</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536175354" stop="1480536175564" status="passed">
+            <name>positiveIfThereIsAuthorization</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536175354" stop="1480536175564" status="passed">
+            <name>positiveIfThereIsAuthorization</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536175569" stop="1480536175806" status="passed">
+            <name>positiveLostPassword</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536175569" stop="1480536175806" status="passed">
+            <name>positiveLostPassword</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536180481" stop="1480536181404" status="passed">
+            <name>negativeAddEmptyComment</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536180481" stop="1480536181404" status="passed">
+            <name>negativeAddEmptyComment</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536181408" stop="1480536183123" status="passed">
+            <name>positiveAddComment</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536181408" stop="1480536183123" status="passed">
+            <name>positiveAddComment</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536183128" stop="1480536184963" status="passed">
+            <name>positiveChangeComment</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536183128" stop="1480536184963" status="passed">
+            <name>positiveChangeComment</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536184965" stop="1480536187277" status="passed">
+            <name>positiveDeleteCancel_Delete</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536184965" stop="1480536187277" status="passed">
+            <name>positiveDeleteCancel_Delete</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536187281" stop="1480536188115" status="passed">
+            <name>positiveDeleteComment</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536187281" stop="1480536188115" status="passed">
+            <name>positiveDeleteComment</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536192372" stop="1480536195721" status="passed">
+            <name>negativeAddEmptyPostFromSubmenu</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536192372" stop="1480536195721" status="passed">
+            <name>negativeAddEmptyPostFromSubmenu</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536195724" stop="1480536198411" status="passed">
+            <name>positiveAddPostFromSubmenuWithNewCategory</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536195724" stop="1480536198411" status="passed">
+            <name>positiveAddPostFromSubmenuWithNewCategory</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536198413" stop="1480536202136" status="passed">
+            <name>positiveAddPostFromSubmenuWithTitle</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536198413" stop="1480536202136" status="passed">
+            <name>positiveAddPostFromSubmenuWithTitle</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536204923" stop="1480536205681" status="passed">
+            <name>negativeRegistration</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536204923" stop="1480536205681" status="passed">
+            <name>negativeRegistration</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536205684" stop="1480536205780" status="passed">
+            <name>positiveIfThereIsRegistration</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536205684" stop="1480536205780" status="passed">
+            <name>positiveIfThereIsRegistration</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536205783" stop="1480536206368" status="passed">
+            <name>positiveRegistration</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536205783" stop="1480536206368" status="passed">
+            <name>positiveRegistration</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536209044" stop="1480536210336" status="passed">
+            <name>negativeCheckSearch</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536209044" stop="1480536210336" status="passed">
+            <name>negativeCheckSearch</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536210339" stop="1480536210991" status="passed">
+            <name>positiveCheckSearch</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1480536210339" stop="1480536210991" status="passed">
+            <name>positiveCheckSearch</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="KristinaKosko"/>
+                <label name="thread" value="11880@KristinaKosko.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

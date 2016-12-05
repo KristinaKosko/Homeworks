@@ -1,0 +1,47 @@
+{
+  "uid" : "276e7c11d7a4aced",
+  "name" : "positiveIfThereIsAuthorization",
+  "title" : "Positive if there is authorization",
+  "time" : {
+    "start" : 1480536175354,
+    "stop" : 1480536175564,
+    "duration" : 210
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "6bccc3c7044d8dd",
+    "name" : "Command line suite : Command line test",
+    "title" : "Command line suite : Command line test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "KristinaKosko"
+  }, {
+    "name" : "thread",
+    "value" : "11880@KristinaKosko.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "Command line suite : Command line test"
+  }, {
+    "name" : "suite-title",
+    "value" : "Command line suite : Command line test"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,383 @@
+{
+  "hosts" : [ {
+    "title" : "KristinaKosko",
+    "threads" : [ {
+      "title" : "11880@KristinaKosko.main(1)",
+      "testCases" : [ {
+        "uid" : "c8cab160f86e8c5a",
+        "name" : "negativeAuthorization",
+        "title" : "Negative authorization",
+        "time" : {
+          "start" : 1480536172409,
+          "stop" : 1480536173579,
+          "duration" : 1170
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "cf4d1d66ec865041",
+        "name" : "negativeAuthorization",
+        "title" : "Negative authorization",
+        "time" : {
+          "start" : 1480536172409,
+          "stop" : 1480536173579,
+          "duration" : 1170
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "fd45d6e85573a807",
+        "name" : "positiveAuthorization",
+        "title" : "Positive authorization",
+        "time" : {
+          "start" : 1480536173803,
+          "stop" : 1480536175348,
+          "duration" : 1545
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "a3f12407e85bd6e3",
+        "name" : "positiveAuthorization",
+        "title" : "Positive authorization",
+        "time" : {
+          "start" : 1480536173803,
+          "stop" : 1480536175348,
+          "duration" : 1545
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "501271e349036456",
+        "name" : "positiveIfThereIsAuthorization",
+        "title" : "Positive if there is authorization",
+        "time" : {
+          "start" : 1480536175354,
+          "stop" : 1480536175564,
+          "duration" : 210
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "276e7c11d7a4aced",
+        "name" : "positiveIfThereIsAuthorization",
+        "title" : "Positive if there is authorization",
+        "time" : {
+          "start" : 1480536175354,
+          "stop" : 1480536175564,
+          "duration" : 210
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "197cef9fa6b55975",
+        "name" : "positiveLostPassword",
+        "title" : "Positive lost password",
+        "time" : {
+          "start" : 1480536175569,
+          "stop" : 1480536175806,
+          "duration" : 237
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "46e1d8cd3e16dc0c",
+        "name" : "positiveLostPassword",
+        "title" : "Positive lost password",
+        "time" : {
+          "start" : 1480536175569,
+          "stop" : 1480536175806,
+          "duration" : 237
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "af3fe2c4664db984",
+        "name" : "negativeAddEmptyComment",
+        "title" : "Negative add empty comment",
+        "time" : {
+          "start" : 1480536180481,
+          "stop" : 1480536181404,
+          "duration" : 923
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "3d22cf38e99d68d6",
+        "name" : "negativeAddEmptyComment",
+        "title" : "Negative add empty comment",
+        "time" : {
+          "start" : 1480536180481,
+          "stop" : 1480536181404,
+          "duration" : 923
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "85adc05999c1d0d4",
+        "name" : "positiveAddComment",
+        "title" : "Positive add comment",
+        "time" : {
+          "start" : 1480536181408,
+          "stop" : 1480536183123,
+          "duration" : 1715
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "aaa79bda6f4e41e8",
+        "name" : "positiveAddComment",
+        "title" : "Positive add comment",
+        "time" : {
+          "start" : 1480536181408,
+          "stop" : 1480536183123,
+          "duration" : 1715
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "d261e0cae60dbd26",
+        "name" : "positiveChangeComment",
+        "title" : "Positive change comment",
+        "time" : {
+          "start" : 1480536183128,
+          "stop" : 1480536184963,
+          "duration" : 1835
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "8f1dea0a5871dc59",
+        "name" : "positiveChangeComment",
+        "title" : "Positive change comment",
+        "time" : {
+          "start" : 1480536183128,
+          "stop" : 1480536184963,
+          "duration" : 1835
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "1876c31b93925dc1",
+        "name" : "positiveDeleteCancel_Delete",
+        "title" : "Positive delete cancel delete",
+        "time" : {
+          "start" : 1480536184965,
+          "stop" : 1480536187277,
+          "duration" : 2312
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "96792033eab77ea1",
+        "name" : "positiveDeleteCancel_Delete",
+        "title" : "Positive delete cancel delete",
+        "time" : {
+          "start" : 1480536184965,
+          "stop" : 1480536187277,
+          "duration" : 2312
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "f67afee0f02a16f4",
+        "name" : "positiveDeleteComment",
+        "title" : "Positive delete comment",
+        "time" : {
+          "start" : 1480536187281,
+          "stop" : 1480536188115,
+          "duration" : 834
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "b63444e097fc1cb4",
+        "name" : "positiveDeleteComment",
+        "title" : "Positive delete comment",
+        "time" : {
+          "start" : 1480536187281,
+          "stop" : 1480536188115,
+          "duration" : 834
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "b8d9a4bee7ff526a",
+        "name" : "negativeAddEmptyPostFromSubmenu",
+        "title" : "Negative add empty post from submenu",
+        "time" : {
+          "start" : 1480536192372,
+          "stop" : 1480536195721,
+          "duration" : 3349
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "61b3f3c2117b64b2",
+        "name" : "negativeAddEmptyPostFromSubmenu",
+        "title" : "Negative add empty post from submenu",
+        "time" : {
+          "start" : 1480536192372,
+          "stop" : 1480536195721,
+          "duration" : 3349
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "f1b80a028801a00a",
+        "name" : "positiveAddPostFromSubmenuWithNewCategory",
+        "title" : "Positive add post from submenu with new category",
+        "time" : {
+          "start" : 1480536195724,
+          "stop" : 1480536198411,
+          "duration" : 2687
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "694716ad65a2792f",
+        "name" : "positiveAddPostFromSubmenuWithNewCategory",
+        "title" : "Positive add post from submenu with new category",
+        "time" : {
+          "start" : 1480536195724,
+          "stop" : 1480536198411,
+          "duration" : 2687
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "91a68b726373b361",
+        "name" : "positiveAddPostFromSubmenuWithTitle",
+        "title" : "Positive add post from submenu with title",
+        "time" : {
+          "start" : 1480536198413,
+          "stop" : 1480536202136,
+          "duration" : 3723
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "53b8f3331a8a5164",
+        "name" : "positiveAddPostFromSubmenuWithTitle",
+        "title" : "Positive add post from submenu with title",
+        "time" : {
+          "start" : 1480536198413,
+          "stop" : 1480536202136,
+          "duration" : 3723
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "aefd3e0cc0ac2a27",
+        "name" : "negativeRegistration",
+        "title" : "Negative registration",
+        "time" : {
+          "start" : 1480536204923,
+          "stop" : 1480536205681,
+          "duration" : 758
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "14a78c485e613f8e",
+        "name" : "negativeRegistration",
+        "title" : "Negative registration",
+        "time" : {
+          "start" : 1480536204923,
+          "stop" : 1480536205681,
+          "duration" : 758
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "f3e47676e095750f",
+        "name" : "positiveIfThereIsRegistration",
+        "title" : "Positive if there is registration",
+        "time" : {
+          "start" : 1480536205684,
+          "stop" : 1480536205780,
+          "duration" : 96
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "5b75da1d189aad4c",
+        "name" : "positiveIfThereIsRegistration",
+        "title" : "Positive if there is registration",
+        "time" : {
+          "start" : 1480536205684,
+          "stop" : 1480536205780,
+          "duration" : 96
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "1327cea60434089d",
+        "name" : "positiveRegistration",
+        "title" : "Positive registration",
+        "time" : {
+          "start" : 1480536205783,
+          "stop" : 1480536206368,
+          "duration" : 585
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "de5a57371062306c",
+        "name" : "positiveRegistration",
+        "title" : "Positive registration",
+        "time" : {
+          "start" : 1480536205783,
+          "stop" : 1480536206368,
+          "duration" : 585
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "8568d82e99884a83",
+        "name" : "negativeCheckSearch",
+        "title" : "Negative check search",
+        "time" : {
+          "start" : 1480536209044,
+          "stop" : 1480536210336,
+          "duration" : 1292
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "88e63794d99582b2",
+        "name" : "negativeCheckSearch",
+        "title" : "Negative check search",
+        "time" : {
+          "start" : 1480536209044,
+          "stop" : 1480536210336,
+          "duration" : 1292
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "6a13b0c0b8b2b6a5",
+        "name" : "positiveCheckSearch",
+        "title" : "Positive check search",
+        "time" : {
+          "start" : 1480536210339,
+          "stop" : 1480536210991,
+          "duration" : 652
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "c49794fd41dd0798",
+        "name" : "positiveCheckSearch",
+        "title" : "Positive check search",
+        "time" : {
+          "start" : 1480536210339,
+          "stop" : 1480536210991,
+          "duration" : 652
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  } ]
+}
