@@ -95,6 +95,14 @@ network_go() {
 	echo ${IPADDR} ubuntu.localhost >> /etc/hosts			# Just to quiet down some error messages
 }
 
+wordpress_go(){
+	mkdir -p /vagrant/src/
+	wget --quiet -c https://wordpress.org/latest.tar.gz -O /tmp/wordpress-latest.tar.gz
+	tar --directory=/vagrant/src/ --extract --strip-components=1 -z -f /tmp/wordpress-latest.tar.gz
+	mv /vagrant/provision-wordpress/ /vagrant/src/
+	chmod -R 777 /vagrant/src/
+}
+
 # This function is called at the very bottom of the file
 main() {
 	update_go #update packages
@@ -102,6 +110,7 @@ main() {
 	apache_go
 	mysql_go
 	php_go
+	wordpress_go
 }
 
 
