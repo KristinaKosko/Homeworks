@@ -1,0 +1,47 @@
+{
+  "uid" : "96792033eab77ea1",
+  "name" : "positiveDeleteCancel_Delete",
+  "title" : "Positive delete cancel delete",
+  "time" : {
+    "start" : 1480536184965,
+    "stop" : 1480536187277,
+    "duration" : 2312
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "6bccc3c7044d8dd",
+    "name" : "Command line suite : Command line test",
+    "title" : "Command line suite : Command line test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "KristinaKosko"
+  }, {
+    "name" : "thread",
+    "value" : "11880@KristinaKosko.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "Command line suite : Command line test"
+  }, {
+    "name" : "suite-title",
+    "value" : "Command line suite : Command line test"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  } ],
+  "parameters" : [ ]
+}
